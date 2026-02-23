@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proof: Let me help</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #1a1a1a;
+            --accent-blue: #0055ff;
+            --muted-gray: #f5f5f7;
+            --text-secondary: #666666;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 80px 10% 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 0 10% 100px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-card {
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-placeholder {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: var(--muted-gray);
+            border-radius: 4px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .name {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+        .role {
+            font-size: 0.9rem;
+            color: var(--accent-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            background-color: var(--muted-gray);
+            padding: 60px 10%;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--text-main);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Proof: Let me help</h1>
+        <p class="subtitle">
+            A team of creators and problem-solvers united by the motto: 
+            <strong>"Be curious, do good work, together."</strong>
+        </p>
+    </header>
+
+    <section class="grid-container">
+        <div class="team-card">
+            <div class="image-placeholder">Portrait Placeholder</div>
+            <span class="role">Co-Founder / CEO</span>
+            <div class="name">Ernest Koe</div>
+            <p class="bio">Passionate about designing systems that help people do great things.</p>
+        </div>
+
+        <div class="team-card">
+            <div class="image-placeholder">Portrait Placeholder</div>
+            <span class="role">Co-Founder / CTO</span>
+            <div class="name">Todd Geist</div>
+            <p class="bio">Leading technical innovation and creating tools for the Claris community.</p>
+        </div>
+
+        <div class="team-card">
+            <div class="image-placeholder">Portrait Placeholder</div>
+            <span class="role">Engineering</span>
+            <div class="name">Martha Zink</div>
+            <p class="bio">Expert developer helping businesses bridge the gap between human needs and code.</p>
+        </div>
+
+        </section>
+
+    <footer>
+        <p>Ready to build something better?</p>
+        <a href="#" class="cta-button">Work with us</a>
+    </footer>
+
+</body>
+</html>
