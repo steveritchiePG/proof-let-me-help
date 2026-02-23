@@ -12,6 +12,7 @@
             --accent-blue: #0055ff;
             --muted-gray: #f5f5f7;
             --text-secondary: #666666;
+            --video-overlay: rgba(0, 85, 255, 0.05);
         }
 
         body {
@@ -24,7 +25,7 @@
         }
 
         header {
-            padding: 80px 10% 40px;
+            padding: 80px 10% 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -40,7 +41,33 @@
             font-size: 1.25rem;
             color: var(--text-secondary);
             max-width: 600px;
-            margin-bottom: 40px;
+        }
+
+        /* New Video Concept Section */
+        .video-concept {
+            margin: 0 10% 60px;
+            padding: 40px;
+            background-color: var(--muted-gray);
+            border-left: 4px solid var(--accent-blue);
+            max-width: 1120px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .video-concept p {
+            font-style: italic;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .lyrics {
+            display: block;
+            margin-top: 15px;
+            color: var(--text-secondary);
+            font-weight: 300;
+            line-height: 1.4;
         }
 
         .grid-container {
@@ -56,21 +83,15 @@
             transition: transform 0.3s ease;
         }
 
-        .team-card:hover {
-            transform: translateY(-5px);
-        }
-
         .image-placeholder {
             width: 100%;
             aspect-ratio: 1 / 1;
             background-color: var(--muted-gray);
             border-radius: 4px;
             margin-bottom: 15px;
-            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.9rem;
             color: #ccc;
         }
 
@@ -118,37 +139,46 @@
     <header>
         <h1>Proof: Let me help</h1>
         <p class="subtitle">
-            A team of creators and problem-solvers united by the motto: 
-            <strong>"Be curious, do good work, together."</strong>
+            A distributed team of experienced problem-solvers with one goal: 
+            <strong>To help you.</strong>
         </p>
     </header>
 
+    <section class="video-concept">
+        <p>
+            Imagine an overlay video of the Proof team doing things with Billy Swan's "I Can Help" playing in the background:
+            <span class="lyrics">
+                "If you got a problem, don't care what it is. If you need a hand, I can assure you this. 
+                I can help. I got two strong arms. I can help. It would sure do me good to do you good, let me help."
+            </span>
+        </p>
+    </section>
+
     <section class="grid-container">
         <div class="team-card">
-            <div class="image-placeholder">Portrait Placeholder</div>
-            <span class="role">Co-Founder / CEO</span>
-            <div class="name">Ernest Koe</div>
-            <p class="bio">Passionate about designing systems that help people do great things.</p>
+            <div class="image-placeholder">J Frey Photo</div>
+            <span class="role">New Jersey Solver</span>
+            <div class="name">J Frey</div>
+            <p class="bio">Ready with a hug when you need it, and muscle when that's the only option.</p>
         </div>
 
         <div class="team-card">
-            <div class="image-placeholder">Portrait Placeholder</div>
+            <div class="image-placeholder">Todd Photo</div>
             <span class="role">Co-Founder / CTO</span>
             <div class="name">Todd Geist</div>
             <p class="bio">Leading technical innovation and creating tools for the Claris community.</p>
         </div>
 
         <div class="team-card">
-            <div class="image-placeholder">Portrait Placeholder</div>
+            <div class="image-placeholder">Martha Photo</div>
             <span class="role">Engineering</span>
             <div class="name">Martha Zink</div>
             <p class="bio">Expert developer helping businesses bridge the gap between human needs and code.</p>
         </div>
-
-        </section>
+    </section>
 
     <footer>
-        <p>Ready to build something better?</p>
+        <p>Ready for some thoughtful, effective, compassionate, hands on help?</p>
         <a href="#" class="cta-button">Work with us</a>
     </footer>
 
