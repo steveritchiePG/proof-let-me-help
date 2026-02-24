@@ -15,7 +15,7 @@
             --video-overlay: rgba(0, 85, 255, 0.05);
         }
     .header-logo {
-        height: 50px; /* Adjust this height to fit your logo design */
+        height: 100px; /* Adjust this height to fit your logo design */
         width: auto;
         margin-bottom: 20px;
         display: block;
@@ -30,16 +30,29 @@
             line-height: 1.6;
         }
 
-        header {
-            padding: 80px 10% 20px;
+       header {
+            padding: 60px 10% 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
+        .header-main {
+            display: flex;
+            align-items: center; /* Vertically centers logo with text */
+            gap: 20px;           /* Space between logo and text */
+            margin-bottom: 10px;
+        }
+
+        .header-logo {
+            height: 60px;        /* Adjusted for a cleaner look next to text */
+            width: auto;
+            display: block;
+        }
+
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;     /* Slightly smaller to fit better on one line */
             font-weight: 700;
-            margin-bottom: 20px;
+            margin: 0;           /* Removes default spacing that breaks alignment */
             letter-spacing: -1px;
         }
 
@@ -143,14 +156,15 @@
 <body>
 
     <header>
+    <div class="header-main">
         <img src="Full Color_Logo.png" alt="Proof Logo" class="header-logo">
-        
         <h1>Proof: Let me help</h1>
-        <p class="subtitle">
-            A distributed team of experienced problem-solvers with one goal: 
-            <strong>To help you.</strong>
-        </p>
-    </header>
+    </div>
+    <p class="subtitle">
+        A distributed team of experienced problem-solvers with one goal: 
+        <strong>To help you.</strong>
+    </p>
+</header>
 
     <section class="video-concept">
         <p>
