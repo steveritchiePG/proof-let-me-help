@@ -13,13 +13,7 @@
             --muted-gray: #f5f5f7;
             --text-secondary: #666666;
             --video-overlay: rgba(0, 85, 255, 0.05);
-        }
-    .header-logo {
-        height: 100px; /* Adjust this height to fit your logo design */
-        width: auto;
-        margin-bottom: 20px;
-        display: block;
-        }
+    
         
         body {
             font-family: 'Inter', sans-serif;
@@ -56,11 +50,31 @@
             letter-spacing: -1px;
         }
 
-        .subtitle {
+    .subtitle {
             font-size: 1.25rem;
             color: var(--text-secondary);
-            max-width: 600px;
+            max-width: none; /* Allows it to stay on one line on desktop */
+            margin-bottom: 40px;
+            line-height: 1.4;
         }
+
+    /* Adjustments for Mobile Screens */
+        @media (max-width: 600px) {
+    .subtitle {
+        font-size: 1.1rem; /* Slightly smaller text for small screens */
+        max-width: 100%;   /* Allows natural wrapping on phones */
+    }
+    
+    h1 {
+        font-size: 2.2rem; /* Shrinks the title so it doesn't break awkwardly */
+    }
+
+    .header-main {
+        flex-direction: column; /* Stacks logo on top of text on mobile */
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
 
         /* New Video Concept Section */
         .video-concept {
@@ -155,14 +169,13 @@
 </head>
 <body>
 
-    <header>
+   <header>
     <div class="header-main">
         <img src="Full Color_Logo.png" alt="Proof Logo" class="header-logo">
         <h1>Proof: Let me help</h1>
     </div>
     <p class="subtitle">
-        A distributed team of experienced problem-solvers with one goal: 
-        <strong>To help you.</strong>
+        A distributed team of experienced problem-solvers with one goal: <strong>To help you.</strong>
     </p>
 </header>
 
